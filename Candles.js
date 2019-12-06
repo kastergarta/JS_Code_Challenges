@@ -1,5 +1,4 @@
 function birthdayCakeCandles(arr) {
-  
     let max = 0;
     let counter = 0;
 
@@ -15,4 +14,10 @@ function birthdayCakeCandles(arr) {
     });
 
     return counter;
+}
+
+
+function birthdayCakeCandles(arr) {
+    let max = Math.max(...arr);
+    return arr.filter(item => item === max).length;
 }
